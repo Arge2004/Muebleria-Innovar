@@ -1,0 +1,42 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/app/landing/layout/header";
+import Footer from "@/app/landing/layout/footer"; 
+import "./globals.css";
+import logo from  "@/app/logo.ico"
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Galeria Innovar",
+  description: "Mueblería ubicada en el municipio de El Santuario, Antioquia, Colombia.",
+  icons: {
+    icon: logo.src,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      > 
+      <Header />
+        {children}
+      <Footer />
+      </body>
+    </html>
+  );
+}

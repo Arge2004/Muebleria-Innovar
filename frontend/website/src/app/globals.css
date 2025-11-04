@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@layer components {
+  .nav-buttons {
+    @apply hover:bg-black/20 transition-all px-3 py-2 rounded-[8px] cursor-pointer;
+  }
+
+  .contact-button {
+    @apply hover:scale-120 cursor-pointer transition-all;
+  }
+
+  .hero-button{
+    @apply w-48 bg-[#F0E9D4] text-black p-1.5 xl:p-2.5 rounded-[8px] cursor-pointer;
+    @apply hover:brightness-95; 
+  }
+
+  .main-muebles-swiper .swiper{
+    @apply w-11/12  flex items-center justify-center ;
+  }
+
+
+  .main-muebles-swiper .swiper-slide{
+    @apply !w-[350px] !h-[400px] xl:!w-[500px] xl:!h-[450px] 2xl:!w-[700px] 2xl:!h-[600px]  !scale-45 2xl:!scale-55 overflow-visible flex items-center justify-center text-center transition-all duration-1500;
+  }
+
+  .main-muebles-swiper .swiper-slide-active{
+    @apply !scale-100 !transition-transform ;
+  }
+  
+  .main-muebles-swiper .swiper-slide-prev, 
+  .main-muebles-swiper .swiper-slide-next{
+    @apply !scale-45 2xl:!scale-55 !transition-transform ;
+  }
+
+}
+
+@theme{
+  --breakpoint-3xl: 1920px;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #f8f6f1;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Archivo', sans-serif;
+}
+
+
+
