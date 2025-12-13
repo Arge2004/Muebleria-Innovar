@@ -1,15 +1,19 @@
+'use client'
 import React from 'react'
+import Marquee from 'react-fast-marquee'
 import { messages } from '@/app/landing/data/messages'
 
 export default function TagLineBar() {
   return (
-    <div className='flex justify-center text-[8px] xl:text-[12px] 2xl:text-lg bg-[#927C73] text-white italic py-3'>
-      {messages.map((message, index) => (
-        <div key={index}>
-          <span>{message}</span>
-          {index < messages.length - 1 && <span className='px-3'> — </span>}
-        </div>
-      ))}
+    <div className='bg-[#927C73] text-white italic py-2 sm:py-3'>
+      <Marquee speed={40} pauseOnHover>
+        {messages.map((message, index) => (
+          <span key={index} className='flex items-center text-xs md:text-sm xl:text-base 2xl:text-lg'>
+            <span className='px-4 sm:px-6 md:px-8'>{message}</span>
+            <span className='text-white/60'>✦</span>
+          </span>
+        ))}
+      </Marquee>
     </div>
   )
 }

@@ -22,7 +22,7 @@ export default function ProductCard({
     onBuyClick
 }: ProductCardProps) {
     return (
-        <article className="w-[280px]">
+        <article className="w-[280px] mx-auto">
             {/* Image Container */}
             <div className="relative h-[185px] bg-white">
                 <Image
@@ -74,7 +74,7 @@ export default function ProductCard({
                     {/* Buy Button with WhatsApp icon */}
                     <button
                         onClick={onBuyClick}
-                        className="px-4 py-4 w-full flex-[3] h-[25px] bg-[#738992] text-white text-sm font-medium rounded-[6px] hover:cursor-pointer hover:bg-[#5b7477] transition-colors duration-200 flex items-center justify-center gap-2"
+                        className="px-4 py-4 w-full flex-[3] h-[25px] bg-[#B8CDA2] text-black text-sm font-medium rounded-[6px] hover:cursor-pointer hover:bg-[#A9B997] transition-colors duration-200 flex items-center justify-center gap-2"
                     >
                         <FaWhatsapp size={20} className="inline" />
                         Comprar
