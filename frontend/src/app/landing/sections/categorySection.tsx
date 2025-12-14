@@ -4,7 +4,7 @@ import { categories } from '@/app/landing/data/categories'
 
 export default function CategorySection() {
   return (
-    <section className="w-full 2xl:h-screen mt-5 pt-6 px-2.5">
+    <section className="w-full lg:py-[48px] lg:h-[calc(100vh)] mt-5 pt-6 px-2.5">
       <div className="w-full h-full flex flex-col">
         {/* Título de la sección */}
         <div className="text-center mb-4 flex-shrink-0 px-4">

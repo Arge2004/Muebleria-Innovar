@@ -1,25 +1,52 @@
 'use client';
-import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
-import { HiMenuAlt3, HiX } from 'react-icons/hi'
-import Image from 'next/image'
-import logo from  "@/app/landing/assets/logo.png"
+import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { HiMenuAlt3, HiX } from 'react-icons/hi';
+import Image from 'next/image';
+import logo from "@/app/landing/assets/logo.png";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const sectionHeroRef = useRef<HTMLElement | null>(null);
+
+  // Detectar el SectionHero de la página de productos
+  useEffect(() => {
+    const findSectionHero = () => {
+      const el = document.querySelector('[data-sectionhero="true"]');
+      sectionHeroRef.current = el as HTMLElement | null;
+    };
+    
+    // Buscar inmediatamente y después de un breve delay (para asegurar que el DOM esté listo)
+    findSectionHero();
+    const timeoutId = setTimeout(findSectionHero, 100);
+    
+    // Observer para detectar cambios en el DOM (cuando cambia de categoría)
+    const observer = new MutationObserver(findSectionHero);
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      clearTimeout(timeoutId);
+      observer.disconnect();
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight * 0.8) {
-        setIsScrolled(true);
+      // Si hay SectionHero (página de productos), usar su altura
+      if (sectionHeroRef.current) {
+        const rect = sectionHeroRef.current.getBoundingClientRect();
+        // Mostrar fondo cuando el SectionHero ya no es visible
+        setIsScrolled(rect.bottom <= 60);
       } else {
-        setIsScrolled(false);
+        // Fallback para otras páginas (como landing)
+        setIsScrolled(window.scrollY > window.innerHeight * 0.8);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Ejecutar inmediatamente
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -47,11 +74,11 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   const navLinks = [
-    { href: "/", label: "Camas" },
-    { href: "/about", label: "Muebles" },
-    { href: "/services", label: "Comedores" },
-    { href: "/contact", label: "Salas" },
-    { href: "/bunk-beds", label: "Camarotes" },
+    { href: "/productos?categoria=camas", label: "Camas" },
+    { href: "/productos?categoria=muebles", label: "Muebles" },
+    { href: "/productos?categoria=comedores", label: "Comedores" },
+    { href: "/productos?categoria=salas", label: "Salas" },
+    { href: "/productos?categoria=camarotes", label: "Camarotes" },
     { href: "/contact", label: "Contacto" },
   ];
 

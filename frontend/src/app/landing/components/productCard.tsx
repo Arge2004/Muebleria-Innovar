@@ -66,7 +66,7 @@ export default function ProductCard({
                     {/* Info Button */}
                     <button
                         onClick={onInfoClick}
-                        className="px-4 py-4 w-full flex-[1] h-[25px] bg-white border border-[#84603B] text-gray-800 text-sm font-medium rounded-[6px] flex items-center justify-center hover:cursor-pointer hover:bg-[#f4efe0] transition-colors duration-200"
+                        className="px-4 py-4 w-full cursor-pointer flex-[1] h-[25px] bg-white border border-[#84603B] text-gray-800 text-sm font-medium rounded-[6px] flex items-center justify-center hover:cursor-pointer hover:bg-[#f4efe0] transition-colors duration-200"
                     >
                         Información
                     </button>
@@ -74,7 +74,7 @@ export default function ProductCard({
                     {/* Buy Button with WhatsApp icon */}
                     <button
                         onClick={onBuyClick}
-                        className="px-4 py-4 w-full flex-[3] h-[25px] bg-[#B8CDA2] text-black text-sm font-medium rounded-[6px] hover:cursor-pointer hover:bg-[#A9B997] transition-colors duration-200 flex items-center justify-center gap-2"
+                        className="px-4 py-4 w-full cursor-pointer flex-[3] h-[25px] bg-[#B8CDA2] text-black text-sm font-medium rounded-[6px] hover:cursor-pointer hover:bg-[#A9B997] transition-colors duration-200 flex items-center justify-center gap-2"
                     >
                         <FaWhatsapp size={20} className="inline" />
                         Comprar
