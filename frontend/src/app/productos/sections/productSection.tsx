@@ -96,14 +96,19 @@ const ProductSection: React.FC = () => {
           <div className="flex-1">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto">
               {filteredProducts.map((product) => (
-                <ProductCard
+                <div
                   key={product.id}
-                  name={product.name}
-                  price={product.price}
-                  originalPrice={product.originalPrice}
-                  imageUrl={product.imageUrl}
-                  tag={product.tag}
-                />
+                  onClick={() => router.push(`/producto/${product.id}`)}
+                  className="cursor-pointer"
+                >
+                  <ProductCard
+                    name={product.name}
+                    price={product.price}
+                    originalPrice={product.originalPrice}
+                    imageUrl={product.imageUrl}
+                    tag={product.tag}
+                  />
+                </div>
               ))}
             </div>
           </div>
