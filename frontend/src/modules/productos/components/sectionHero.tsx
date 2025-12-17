@@ -31,7 +31,7 @@ const SectionHero: React.FC<SectionHeroProps> = ({
       </h1>
       {subtitle && (
         <p className="italic text-lg mb-1 drop-shadow">
-          "{subtitle}"
+          &quot;{subtitle}&quot;
         </p>
       )}
       {description && (

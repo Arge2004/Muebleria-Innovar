@@ -13,7 +13,6 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images, productName }) 
   const [isModalOpen, setIsModalOpen] = useState(false); 
   
   // Límite de miniaturas: 3 en móvil, 4 en LG y superiores.
-  const MAX_THUMBNAILS_MOBILE = 3; 
   const MAX_THUMBNAILS_DESKTOP = 4;
   
   // Determinar el número de imágenes visibles para el corte
