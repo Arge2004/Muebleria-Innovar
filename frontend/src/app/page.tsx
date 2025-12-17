@@ -1,13 +1,12 @@
 "use client";
-import TagLineBar from "@/app/landing/components/tagLineBar";
-import CategorySection from "@/app/landing/sections/categorySection";
-import HeroSection from "@/app/landing/sections/heroSection";
-import MainMueblesSection from "@/app/landing/sections/mainMueblesSection";
-import CollectionSection from "@/app/landing/sections/collectionSection";
-import { collections } from "@/app/landing/data/collections";
-import ProductSection from "@/app/landing/sections/productSection";
-import TestimonialsSection from "@/app/landing/sections/testimonialsSection";
-import FeaturesSection from "@/app/landing/sections/featuresSection";
+import HeroSection from "@/modules/landing/sections/heroSection";
+import TagLineBar from "@/modules/landing/components/tagLineBar";
+import MainMueblesSection from "@/modules/landing/sections/mainMueblesSection";
+import CategorySection from "@/modules/landing/sections/categorySection";
+import CollectionSection from "@/modules/landing/sections/collectionSection";
+import ProductSection from "@/modules/landing/sections/productSection";
+import TestimonialsSection from "@/modules/landing/sections/testimonialsSection";
+import FeaturesSection from "@/modules/landing/sections/featuresSection";
 
 
 export default function Home() {

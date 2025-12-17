@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Header from "@/app/landing/layout/header";
-import Footer from "@/app/landing/layout/footer"; 
+
+import Header from "@/modules/general/layout/header";
+import Footer from "@/modules/general/layout/footer"; 
+import AOSInit from "@/modules/general/componentes/AOSInit";
 import "./globals.css";
 import logo from  "@/app/logo.ico"
 
@@ -34,9 +36,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > 
       <Header />
+      <AOSInit />
         {children}
       <Footer />
       </body>
     </html>
   );
 }
+
