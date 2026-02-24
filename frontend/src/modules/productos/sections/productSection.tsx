@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import AOS from "aos";
-import { products } from "@/modules/landing/data/products";
+import products from "@/muebles.json";
+import { Product } from "@/types/product";
 import ProductCard from "@/modules/general/componentes/productCard";
 import TagLineBar from "@/modules/landing/components/tagLineBar";
 import SectionHero from "@/modules/productos/components/sectionHero";
@@ -61,8 +62,8 @@ const ProductSection: React.FC = () => {
   }, [catSel, telaSel, tamSel, precio]);
 
   // Filtrar productos según los criterios seleccionados
-  const filteredProducts = products.filter((product) => {
-    if (catSel && product.category !== catSel) return false;
+  const filteredProducts = products.filter((product: Product) => {
+    if (catSel && product.categoria !== catSel) return false;
     if (precio && (product.price < precio[0] || product.price > precio[1])) return false;
     return true;
   });
@@ -111,7 +112,7 @@ const ProductSection: React.FC = () => {
           {/* Grid de productos */}
           <div className="flex-1">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-              {filteredProducts.map((product, index) => {
+              {filteredProducts.map((product: Product, index) => {
                 // Calcular fila según las columnas actuales del viewport
                 const row = Math.floor(index / cols);
                 const delay = row * 100; // 100ms de delay por cada fila
@@ -125,7 +126,7 @@ const ProductSection: React.FC = () => {
                     data-aos-delay={delay}
                   >
                     <ProductCard
-                      name={product.name}
+                      name={product.nombre}
                       price={product.price}
                       originalPrice={product.originalPrice}
                       imageUrl={product.images[0]}

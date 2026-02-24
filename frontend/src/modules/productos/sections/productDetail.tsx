@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { useParams, useRouter } from "next/navigation";
-import { products } from "@/modules/landing/data/products";
+import products from "@/muebles.json";
+import { Product } from "@/types/product";
 import ProductGallery from "@/modules/productos/components/productGallery";
 import ProductInfo from "@/modules/productos/components/productInfo";
 import RelatedProducts from "@/modules/productos/components/relatedProducts";
@@ -12,7 +13,7 @@ const ProductDetail: React.FC = () => {
   const router = useRouter();
   const productId = params?.id as string;
 
-  const product = products.find((p) => p.id === productId);
+  const product = products.find((p: Product) => p.id === productId);
 
   if (!product) {
     return (
@@ -34,7 +35,7 @@ const ProductDetail: React.FC = () => {
   const productImages = product.images;
 
   const handleBuyClick = () => {
-    const message = `Hola, estoy interesado en: ${product.name} - Ref: ${product.id}`;
+    const message = `Hola, estoy interesado en: ${product.nombre} - Ref: ${product.id}`;
     window.open(
       `https://wa.me/573001234567?text=${encodeURIComponent(message)}`,
       "_blank"
@@ -60,22 +61,22 @@ const ProductDetail: React.FC = () => {
               <li>
                 <button
                   onClick={() =>
-                    router.push(`/productos?categoria=${product.category}`)
+                    router.push(`/productos?categoria=${product.categoria}`)
                   }
                   className="hover:text-[#6B705C] capitalize"
                 >
-                  {product.category.charAt(0).toUpperCase() +
-                    product.category.slice(1)}
+                  {product.categoria.charAt(0).toUpperCase() +
+                    product.categoria.slice(1)}
                 </button>
               </li>
               <li>/</li>
-              <li className="text-gray-400">{product.name}</li>
+              <li className="text-gray-400">{product.nombre}</li>
             </ol>
           </nav>
 
           {/* Contenido principal */}
           <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr_1fr] gap-4 lg:gap-6 mb-10">
-            <ProductGallery images={productImages} productName={product.name} />
+            <ProductGallery images={productImages} productName={product.nombre} />
             <ProductInfo product={product} onBuyClick={handleBuyClick} />
           </div>
         </div>

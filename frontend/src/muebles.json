@@ -1,0 +1,599 @@
+[
+    {
+        "id": "comedor-roble-4-puestos",
+        "categoria": "comedores",
+        "nombre": "COMEDOR ROBLE 4 PUESTOS",
+        "descripcion": "Elegancia natural para compartir grandes momentos. Este comedor combina la calidez del roble con la elegancia del tapizado, creando un espacio moderno, resistente y acogedor para el día a día.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Mesa rectangular para 4 puestos",
+            "Tapa en vidrio templado de 10 mm",
+            "Base en roble macizo",
+            "Medidas: 120 x 90 cm"
+        ],
+        "materiales_calidad": [
+            "Roble seleccionado de alta resistencia",
+            "Vidrio templado de seguridad",
+            "Ensambles firmes que evitan desajustes"
+        ],
+        "beneficios": [
+            "Diseño moderno y elegante",
+            "Fácil limpieza",
+            "Ideal para espacios medianos",
+            "Alta durabilidad"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Opciones de acabado en la madera",
+            "Tapizado de las sillas con tela a elección"
+        ]
+    },
+    {
+        "id": "comedor-ahorrador-de-espacio",
+        "categoria": "comedores",
+        "nombre": "COMEDOR AHORRADOR DE ESPACIO",
+        "descripcion": "Funcionalidad inteligente con estilo. Diseñado para optimizar espacios sin sacrificar diseño ni comodidad, perfecto para apartamentos o áreas compactas.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Mesa cuadrada compacta",
+            "Vidrio templado de 10 mm",
+            "Medidas: 1 metro"
+        ],
+        "materiales_calidad": [
+            "Estructura sólida en pino",
+            "Vidrio resistente al uso diario"
+        ],
+        "beneficios": [
+            "Ahorro de espacio",
+            "Estética limpia y moderna",
+            "Ideal para hogares pequeños"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Acabados disponibles según preferencia",
+            "Tapizado de las sillas con tela a elección"
+        ]
+    },
+    {
+        "id": "comedor-roble-macizo-tapa-redonda",
+        "categoria": "comedores",
+        "nombre": "COMEDOR ROBLE MACIZO TAPA REDONDA",
+        "descripcion": "Robustez, diseño y calidez en un solo ambiente. Un comedor que destaca por su estructura sólida y un diseño minimalista que nunca pasa de moda.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Mesa redonda en roble macizo",
+            "Sillas minimalistas incluidas",
+            "Diámetros disponibles: 1.00 m y 1.20 m"
+        ],
+        "materiales_calidad": [
+            "Roble macizo de alta durabilidad",
+            "Acabados artesanales"
+        ],
+        "beneficios": [
+            "Apariencia natural y elegante",
+            "Alta resistencia estructural",
+            "Ideal para comedores protagonistas"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Tonos de madera a elección",
+            "Tapizado de las sillas con tela a elección"
+        ]
+    },
+    {
+        "id": "comedor-roble-3-4",
+        "categoria": "comedores",
+        "nombre": "COMEDOR ROBLE 3/4",
+        "descripcion": "Diseño práctico con carácter natural. Una opción equilibrada entre resistencia, funcionalidad y estética.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Mesa con vidrio templado de 10 mm",
+            "Sillas macizas con espalda lisa",
+            "Diámetro: 80 x 90"
+        ],
+        "materiales_calidad": [
+            "Estructura en roble 3/4",
+            "Vidrio de alta seguridad"
+        ],
+        "beneficios": [
+            "Compacto y funcional",
+            "Ideal para uso diario",
+            "Fácil mantenimiento"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Acabados según preferencia",
+            "Tapizado de las sillas con tela a elección"
+        ]
+    },
+    {
+        "id": "nochero-galeria",
+        "categoria": "nocheros",
+        "nombre": "NOCHERO GALERÍA",
+        "descripcion": "Practicidad y diseño en cada detalle. Un mueble auxiliar funcional que aporta orden y estilo al dormitorio.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Opciones de 2 o 3 cajones",
+            "Cajón revistero"
+        ],
+        "materiales_calidad": [
+            "Cajones y patas en roble",
+            "Estructura en MDF de alta calidad",
+            "Rieles metálicos resistentes"
+        ],
+        "beneficios": [
+            "Excelente capacidad de almacenamiento",
+            "Diseño moderno",
+            "Fácil apertura y cierre"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Opciones de tamaño y distribución"
+        ]
+    },
+    {
+        "id": "nochero-roble-3-cajones",
+        "categoria": "nocheros",
+        "nombre": "NOCHERO ROBLE 3 CAJONES",
+        "descripcion": "Clásico, resistente y elegante. Diseñado completamente en madera maciza para quienes valoran durabilidad y estilo.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "3 cajones amplios"
+        ],
+        "materiales_calidad": [
+            "Roble macizo",
+            "Ensambles tradicionales"
+        ],
+        "beneficios": [
+            "Alta resistencia",
+            "Estética atemporal",
+            "Ideal para cualquier dormitorio"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Acabados: natural, miel y envejecido"
+        ]
+    },
+    {
+        "id": "camas-talladas-roble-macizo",
+        "categoria": "camas",
+        "nombre": "CAMAS TALLADAS EN ROBLE MACIZO",
+        "descripcion": "Arte y tradición en tu descanso. Camas con detalles tallados a mano que reflejan elegancia y carácter.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Espaldar y piecera tallados",
+            "Diseño clásico",
+            "Tamaños disponibles: 1 m, 1.20 m, 1.40 m, 1.60 m"
+        ],
+        "materiales_calidad": [
+            "Roble macizo",
+            "Tallados en la misma madera"
+        ],
+        "beneficios": [
+            "Diseño exclusivo",
+            "Gran resistencia",
+            "Aporta valor decorativo"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Acabados: natural, miel y envejecido"
+        ]
+    },
+    {
+        "id": "camas-remarco-roble",
+        "categoria": "camas",
+        "nombre": "CAMAS DE REMARCO EN ROBLE",
+        "descripcion": "Confort y diseño personalizado. Una cama que mezcla madera y tapizado para un ambiente más acogedor.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Espaldar y piecera con centro tapizado"
+        ],
+        "materiales_calidad": [
+            "Estructura en roble",
+            "Telas de alta resistencia"
+        ],
+        "beneficios": [
+            "Mayor confort",
+            "Estilo moderno",
+            "Personalizable"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Telas y colores a elección"
+        ]
+    },
+    {
+        "id": "camarote-roble-piramide",
+        "categoria": "camarotes",
+        "nombre": "CAMAROTE ROBLE PIRÁMIDE",
+        "descripcion": "Solución práctica y resistente para compartir espacios.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Cama superior: 1 x 1.90",
+            "Cama inferior: 1.20 x 1.90"
+        ],
+        "materiales_calidad": [
+            "Roble macizo",
+            "Estructura reforzada"
+        ],
+        "beneficios": [
+            "Aprovechamiento del espacio",
+            "Alta resistencia",
+            "Ideal para familias"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Acabados en madera"
+        ]
+    },
+    {
+        "id": "camarote-lineal",
+        "categoria": "camarotes",
+        "nombre": "CAMAROTE LINEAL",
+        "descripcion": "Diseño limpio y funcional.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Medidas: 1 x 1.90 m y 1.20 x 1.90 m"
+        ],
+        "materiales_calidad": [
+            "Roble macizo"
+        ],
+        "beneficios": [
+            "Diseño sencillo",
+            "Resistente",
+            "Fácil integración"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Acabados disponibles"
+        ]
+    },
+    {
+        "id": "tarimas-roble",
+        "categoria": "camarotes",
+        "nombre": "TARIMAS EN ROBLE",
+        "descripcion": "Resistencia y practicidad.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Base con rodachines",
+            "Tendido de tablas"
+        ],
+        "materiales_calidad": [
+            "Roble macizo"
+        ],
+        "beneficios": [
+            "Fácil movilidad",
+            "Alta durabilidad"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Medidas y acabados a elección"
+        ]
+    },
+    {
+        "id": "sala-confort",
+        "categoria": "salas",
+        "nombre": "SALA CONFORT",
+        "descripcion": "Comodidad que se siente, diseño que permanece. La Sala Confort está pensada para quienes buscan amplitud, suavidad y versatilidad en un solo ambiente. Su diseño modular permite adaptarse fácilmente a distintos espacios, manteniendo siempre una estética moderna y acogedora.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "5 módulos independientes",
+            "Cojines sueltos con algodón siliconado"
+        ],
+        "materiales_calidad": [
+            "Estructura interna en pino ciprés",
+            "Espuma de alta calidad"
+        ],
+        "beneficios": [
+            "Máximo confort",
+            "Diseño versátil",
+            "Larga vida útil"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Telas y colores a elección"
+        ]
+    },
+    {
+        "id": "sala-pandora",
+        "categoria": "salas",
+        "nombre": "SALA PANDORA",
+        "descripcion": "Diseño envolvente que invita al descanso. La Sala Pandora destaca por su forma en L y asientos tipo nube, brindando una experiencia de descanso suave y envolvente, ideal para el relax diario.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Sala en L",
+            "Asientos tipo nube",
+            "Medidas: 1.70 x 2.60"
+        ],
+        "materiales_calidad": [
+            "Espuma penta densidad 26 – 10 cm",
+            "Estructura interna en pino ciprés"
+        ],
+        "beneficios": [
+            "Sensación extra de suavidad",
+            "Diseño moderno y acogedor",
+            "Ideal para descanso prolongado"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Tapizados y colores a elección"
+        ]
+    },
+    {
+        "id": "sala-royal",
+        "categoria": "salas",
+        "nombre": "SALA ROYAL",
+        "descripcion": "Funcionalidad premium con estilo elegante. Una sala pensada para quienes buscan más que comodidad. Su sofá carrito expandible y baúl interno la convierten en una solución práctica y sofisticada.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Sala en L",
+            "Sofá carrito expandible",
+            "Baúl interno",
+            "Medidas: 2.20 x 1.50"
+        ],
+        "materiales_calidad": [
+            "Patas en roble natural",
+            "Estructura en pino ciprés"
+        ],
+        "beneficios": [
+            "Función sofá cama",
+            "Espacio de almacenamiento oculto",
+            "Diseño elegante y práctico"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Telas y colores a elección"
+        ]
+    },
+    {
+        "id": "sala-reclinomatic-plus",
+        "categoria": "salas",
+        "nombre": "SALA RECLINOMATIC PLUS",
+        "descripcion": "Tecnología y confort de alto nivel. La Sala Reclinomatic Plus ofrece una experiencia superior gracias a sus motores eléctricos, sistema de masaje y asientos resortados.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "5 módulos en forma de L",
+            "2 sillas reclinables con motores eléctricos",
+            "Sistema de masaje integrado",
+            "Medidas: 2.50 x 2.50"
+        ],
+        "materiales_calidad": [
+            "Asientos con sistema pocket (unidad resortada)",
+            "Estructura interna en pino ciprés"
+        ],
+        "beneficios": [
+            "Máximo confort tecnológico",
+            "Ideal para descanso profundo",
+            "Diseño moderno y robusto"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Tapizados y colores personalizables"
+        ]
+    },
+    {
+        "id": "sala-reclinomatic",
+        "categoria": "salas",
+        "nombre": "SALA RECLINOMATIC",
+        "descripcion": "Relajación inteligente para tu hogar. Una sala funcional con reclinación eléctrica que combina comodidad, tecnología y diseño.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "5 módulos en forma de L",
+            "2 sillas reclinables eléctricas",
+            "Medidas: 2.50 x 2.50"
+        ],
+        "materiales_calidad": [
+            "Asientos ergonómicos",
+            "Estructura en pino ciprés"
+        ],
+        "beneficios": [
+            "Reclinación cómoda y silenciosa",
+            "Ideal para descanso diario",
+            "Fácil uso"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Telas y colores a elección"
+        ]
+    },
+    {
+        "id": "sala-click-clack",
+        "categoria": "salas",
+        "nombre": "SALA CLICK CLACK",
+        "descripcion": "Versatilidad total para espacios dinámicos. Una solución completa que integra sofá cama, sillas reclinables y accesorios decorativos.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Sofá cama",
+            "2 sillas reclinables",
+            "Puff pequeño",
+            "3 cojines decorativos",
+            "Medidas sofá cama: 1.80 x 1.20"
+        ],
+        "materiales_calidad": [
+            "Estructura interna resistente",
+            "Espumas de alta durabilidad"
+        ],
+        "beneficios": [
+            "Función cama integrada",
+            "Ideal para visitas",
+            "Diseño práctico y moderno"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Colores y telas personalizables"
+        ]
+    },
+    {
+        "id": "sala-tomy",
+        "categoria": "salas",
+        "nombre": "SALA TOMY",
+        "descripcion": "Diseño fresco y acogedor. Una sala compacta con personalidad, ideal para espacios modernos y funcionales.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Sofá de dos puestos",
+            "2 poltronas auxiliares en forma de palma",
+            "Medidas sofá: 1.60 x 70"
+        ],
+        "materiales_calidad": [
+            "Estructura en pino ciprés",
+            "Espumas confortables"
+        ],
+        "beneficios": [
+            "Ideal para espacios pequeños",
+            "Diseño moderno",
+            "Fácil integración"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Colores y telas personalizables"
+        ]
+    },
+    {
+        "id": "sala-pekin-carrito",
+        "categoria": "salas",
+        "nombre": "SALA PEKÍN CARRITO",
+        "descripcion": "Funcionalidad total para el hogar moderno. La Sala Pekín Carrito combina diseño contemporáneo con soluciones prácticas como sofá cama, almacenamiento interno y puffs auxiliares, ideal para hogares dinámicos.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Sala de 3 módulos en forma de L",
+            "Reposa cabezas ajustables",
+            "6 puff auxiliares",
+            "Carrito expandible sofá cama",
+            "Baúl interno de almacenamiento",
+            "Medidas: 2.50 x 2.50"
+        ],
+        "materiales_calidad": [
+            "Estructura interna en pino ciprés",
+            "Espumas de alta calidad para uso diario"
+        ],
+        "beneficios": [
+            "Sofá cama integrado",
+            "Espacio de almacenamiento oculto",
+            "Ideal para salas familiares",
+            "Diseño moderno y funcional"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Tapizados y colores personalizables"
+        ]
+    },
+    {
+        "id": "sala-pekin",
+        "categoria": "salas",
+        "nombre": "SALA PEKÍN",
+        "descripcion": "Confort modular con estilo contemporáneo. La Sala Pekín es una opción cómoda y versátil que se adapta fácilmente a diferentes espacios, manteniendo un equilibrio entre diseño moderno y funcionalidad.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Sala de 3 módulos en forma de L",
+            "Reposa cabezas",
+            "6 puff auxiliares",
+            "Medidas: 2.50 x 2.50"
+        ],
+        "materiales_calidad": [
+            "Estructura interna en pino ciprés",
+            "Espumas de alta resistencia"
+        ],
+        "beneficios": [
+            "Excelente comodidad",
+            "Diseño práctico y moderno",
+            "Ideal para uso diario",
+            "Fácil adaptación al espacio"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Telas y colores a elección"
+        ]
+    },
+    {
+        "id": "sala-chester",
+        "categoria": "salas",
+        "nombre": "SALA CHESTER",
+        "descripcion": "Elegancia clásica que nunca pasa de moda. La Sala Chester es un ícono del diseño tradicional. Su acabado capitoneado y líneas elegantes la convierten en una pieza protagonista que aporta distinción y carácter a cualquier espacio.",
+        "price": 0,
+        "images": [],
+        "composicion": [
+            "Sofá de 2 o 3 puestos",
+            "2 sillas auxiliares capitoneadas",
+            "Medidas sofá 3 puestos: 2.30 x 90",
+            "Medidas sofá 2 puestos: 1.80 x 90",
+            "Medidas sillas: 75 x 75"
+        ],
+        "materiales_calidad": [
+            "Tapizado capitoneado artesanal",
+            "Estructura interna en pino ciprés",
+            "Espumas de alta durabilidad"
+        ],
+        "beneficios": [
+            "Estilo clásico y elegante",
+            "Diseño atemporal",
+            "Alta resistencia estructural",
+            "Ideal para salas principales"
+        ],
+        "garantia": [
+            "3 años de garantía en broma y desajuste"
+        ],
+        "personalizacion": [
+            "Telas y colores a elección del cliente"
+        ]
+    }
+]

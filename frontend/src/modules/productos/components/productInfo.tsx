@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
-import { Product } from '@/modules/landing/data/products';
+import { Product } from '@/types/product';
 import Accordion from './accordion';
 
 interface ProductInfoProps {
@@ -14,11 +14,8 @@ const ProductInfo: React.FC<ProductInfoProps> = ({ product, onBuyClick }) => {
     <div className="order-3 space-y-4">
       <div className="flex justify-between items-start">
         <h1 className="text-2xl md:text-3xl font-normal text-gray-900">
-          {product.name}
+          {product.nombre}
         </h1>
-        <p className="text-sm text-gray-500 whitespace-nowrap ml-4">
-          Referencia: {product.id}
-        </p>
       </div>
 
       {/* Precio */}
@@ -38,7 +35,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({ product, onBuyClick }) => {
       {/* Descripción */}
       <div>
         <p className="text-gray-700 text-sm leading-relaxed">
-          {product.description || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et est vitae, consectetur adipiscing elit. Maecenas et eros nec mauris pellentesque aliquam. Quisque ante arcu, venenatis ut lectus sed, volutpat sodales nibh. Duis maximus a dui ac fringilla.'}
+          {product.descripcion}
         </p>
       </div>
 
@@ -53,7 +50,62 @@ const ProductInfo: React.FC<ProductInfoProps> = ({ product, onBuyClick }) => {
 
       {/* Acordeones */}
       <div className="space-y-2 pt-2">
+        {/* Composición */}
+        {product.composicion && product.composicion.length > 0 && (
+          <Accordion title="Composición">
+            <ul className="space-y-2 text-gray-700 text-sm">
+              {product.composicion.map((item, index) => (
+                <li key={index}>• {item}</li>
+              ))}
+            </ul>
+          </Accordion>
+        )}
 
+        {/* Materiales y Calidad */}
+        {product.materiales_calidad && product.materiales_calidad.length > 0 && (
+          <Accordion title="Materiales y Calidad">
+            <ul className="space-y-2 text-gray-700 text-sm">
+              {product.materiales_calidad.map((item, index) => (
+                <li key={index}>• {item}</li>
+              ))}
+            </ul>
+          </Accordion>
+        )}
+
+        {/* Beneficios */}
+        {product.beneficios && product.beneficios.length > 0 && (
+          <Accordion title="Beneficios">
+            <ul className="space-y-2 text-gray-700 text-sm">
+              {product.beneficios.map((item, index) => (
+                <li key={index}>• {item}</li>
+              ))}
+            </ul>
+          </Accordion>
+        )}
+
+        {/* Garantía */}
+        {product.garantia && product.garantia.length > 0 && (
+          <Accordion title="Garantía">
+            <ul className="space-y-2 text-gray-700 text-sm">
+              {product.garantia.map((item, index) => (
+                <li key={index}>• {item}</li>
+              ))}
+            </ul>
+          </Accordion>
+        )}
+
+        {/* Personalización */}
+        {product.personalizacion && product.personalizacion.length > 0 && (
+          <Accordion title="Personalización">
+            <ul className="space-y-2 text-gray-700 text-sm">
+              {product.personalizacion.map((item, index) => (
+                <li key={index}>• {item}</li>
+              ))}
+            </ul>
+          </Accordion>
+        )}
+
+        {/* Cuidados - mantener el acordeón existente */}
         <Accordion title="Cuidados">
           <ul className="space-y-2 text-gray-700 text-sm">
             <li>• Limpiar con paño suave y húmedo</li>
@@ -63,6 +115,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({ product, onBuyClick }) => {
           </ul>
         </Accordion>
 
+        {/* Envío - mantener el acordeón existente */}
         <Accordion title="Envío">
           <div className="text-gray-700 text-sm space-y-2">
             <p>• Envío a nivel nacional</p>

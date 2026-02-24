@@ -26,7 +26,7 @@ export default function CategoryCard({
           src={imageUrl}
           alt={title}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
           priority
         />
         {/* Overlay gradient */}

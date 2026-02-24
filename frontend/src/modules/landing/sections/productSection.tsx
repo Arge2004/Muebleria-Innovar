@@ -7,7 +7,8 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import { useRouter } from 'next/navigation';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
-import { products } from '@/modules/landing/data/products'
+import products from '@/muebles.json'
+import { Product } from '@/types/product'
 
 export default function ProductSection() {
     const router = useRouter();
@@ -45,10 +46,10 @@ export default function ProductSection() {
                         spaceBetween={10}
                         className='h-full sm:!pl-7 xl:!pl-25 '
                     >
-                        {products.map((product) => (
+                        {products.map((product: Product) => (
                             <SwiperSlide key={product.id}>
                                 <ProductCard
-                                    name={product.name}
+                                    name={product.nombre}
                                     price={product.price}
                                     originalPrice={product.originalPrice}
                                     imageUrl={product.images[0]}
