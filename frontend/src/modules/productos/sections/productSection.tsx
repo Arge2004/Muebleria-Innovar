@@ -129,7 +129,7 @@ const ProductSection: React.FC = () => {
                       name={product.nombre}
                       price={product.price}
                       originalPrice={product.originalPrice}
-                      imageUrl={product.images[0]}
+                      imageUrl={product.images[0] || '/notfound.png'}
                       tag={product.tag}
                     />
                   </div>
