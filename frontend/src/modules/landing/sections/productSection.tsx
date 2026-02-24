@@ -52,7 +52,7 @@ export default function ProductSection() {
                                     name={product.nombre}
                                     price={product.price}
                                     originalPrice={product.originalPrice}
-                                    imageUrl={product.images[0] || '/notfound.png'}
+                                    imageUrl={product.images[0] || ''}
                                     tag={product.tag}
                                     onInfoClick={() => router.push(`/producto/${product.id}`)}
                                     onBuyClick={() => console.log(`Comprar: ${product.id}`)}

@@ -24,13 +24,19 @@ export default function ProductCard({
     return (
         <article className="w-full max-w-[280px] mx-auto">
             {/* Image Container */}
-            <div className="relative h-[185px] bg-white">
-                <Image
-                    src={imageUrl}
-                    alt={name}
-                    fill
-                    className="object-cover"
-                />
+            <div className="relative h-[185px] bg-gray-100 flex items-center justify-center">
+                {imageUrl ? (
+                    <Image
+                        src={imageUrl}
+                        alt={name}
+                        fill
+                        className="object-cover"
+                    />
+                ) : (
+                    <p className="text-gray-400 text-center px-4 text-sm">
+                        Imagen no Disponible<br />Actualmente
+                    </p>
+                )}
             </div>
 
             {/* Content */}

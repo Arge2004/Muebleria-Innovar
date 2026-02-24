@@ -12,8 +12,9 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images, productName }) 
   const [selectedImage, setSelectedImage] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false); 
   
-  // Usar imagen por defecto si no hay imágenes
-  const productImages = images.length > 0 ? images : ['/notfound.png'];
+  // Usar array vacío si no hay imágenes
+  const productImages = images.length > 0 ? images : [];
+  const hasImages = productImages.length > 0;
   
   // Límite de miniaturas: 3 en móvil, 4 en LG y superiores.
   const MAX_THUMBNAILS_DESKTOP = 4;
@@ -105,21 +106,27 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images, productName }) 
 
       </div>
 
-      {/* Imagen principal (sin cambios) */}
-      <div className="order-1 lg:order-2 relative aspect-[4/3] bg-gray-100 rounded overflow-hidden">
-        <Image
-          src={productImages[selectedImage]}
-          alt={productName}
-          fill
-          className="object-cover hover:cursor-pointer"
-          priority
-          sizes="(max-width: 1024px) 100vw, 700px" 
-          onClick={openModal}
-        />
+      {/* Imagen principal */}
+      <div className="order-1 lg:order-2 relative aspect-[4/3] bg-gray-100 rounded overflow-hidden flex items-center justify-center">
+        {hasImages ? (
+          <Image
+            src={productImages[selectedImage]}
+            alt={productName}
+            fill
+            className="object-cover hover:cursor-pointer"
+            priority
+            sizes="(max-width: 1024px) 100vw, 700px" 
+            onClick={openModal}
+          />
+        ) : (
+          <p className="text-gray-400 text-center px-4 text-lg">
+            Imagen no Disponible<br />Actualmente
+          </p>
+        )}
       </div>
 
-      {/* Modal de Imágenes y Zoom (sin cambios) */}
-      {isModalOpen && (
+      {/* Modal de Imágenes y Zoom */}
+      {isModalOpen && hasImages && (
         <ImageModal
           images={productImages}
           productName={productName}
