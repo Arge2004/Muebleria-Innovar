@@ -11,7 +11,7 @@ export default function HeroSection() {
                 <h2 className='leading-snug'>
                     Más que muebles,
                     <br />
-                    <span className='text-[#F0E9D4]'>creamos experiencias de vida.</span>
+                    <span className='text-[#F0E9D4]'>creamos experiencias de calidad.</span>
                 </h2>
                  <h1 className='text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl 3xl:text-9xl italic font-serif text-white font-bold z-10 text-center my-4 sm:my-10'>
                 Galería Innovar
